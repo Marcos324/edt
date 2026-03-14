@@ -1,0 +1,12 @@
+# Configuración de Netlify para EDT Tucumán
+[build]
+  publish = "."
+  # Sin comando de build: sitio estático (HTML, CSS, JS)
+
+# Encabezados de seguridad y buenas prácticas
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
