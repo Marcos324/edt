@@ -1,6 +1,6 @@
-# EDT Tucumán – Sitio web
+# Estética Dental Tucumán (EDT) – Sitio web
 
-Sitio web inspirado en el perfil de Instagram [@edtucuman](https://www.instagram.com/edtucuman/). Diseño responsive, oscuro y fácil de personalizar.
+Sitio web de **Estética Dental Tucumán**, con enlaces a [Instagram @edtucuman](https://www.instagram.com/edtucuman/) y [Facebook EDTucuman](https://www.facebook.com/EDTucuman). Diseño responsive y fácil de personalizar.
 
 ## Cómo ver el sitio
 
@@ -33,12 +33,12 @@ Luego entrá a `http://localhost:8000` en el navegador.
 - **Nosotros:** Cambiá el contenido en la sección `#nosotros` (`.about-text`).
 - **Contacto:** Actualizá el enlace de WhatsApp en `#contacto`: reemplazá `5493810000000` por el número real (código país + número sin 0 ni 15).
 
-### Galería con fotos de Instagram
+### Galería con fotos de Instagram o Facebook
 
-No se puede “sacar” el feed automáticamente sin usar la API de Instagram. Podés:
+No se puede extraer el feed automáticamente desde Instagram ni Facebook. Podés:
 
-1. **Enlaces a Instagram:** Dejar los ítems de la galería como están (cada uno lleva a [@edtucuman](https://www.instagram.com/edtucuman/)).
-2. **Fotos manuales:** Descargar las fotos que quieras de tu perfil y usarlas en el sitio. En cada `.gallery-item` reemplazá el `<div class="gallery-img" style="...">` por:
+1. **Enlaces:** Dejar los ítems como están (enlazan a [@edtucuman](https://www.instagram.com/edtucuman/) y a [Facebook EDTucuman](https://www.facebook.com/EDTucuman)).
+2. **Fotos manuales:** Descargar fotos desde Instagram o Facebook y usarlas en el sitio. En cada `.gallery-item` reemplazá el `<div class="gallery-img" style="...">` por:
    ```html
    <img class="gallery-img" src="ruta/a/tu-foto.jpg" alt="Descripción">
    ```
@@ -48,11 +48,11 @@ No se puede “sacar” el feed automáticamente sin usar la API de Instagram. P
 
 En `styles.css`, al inicio (`:root`), podés cambiar:
 
-- `--color-accent` y `--color-accent-dim`: color principal (hoy dorado/ámbar).
+- `--color-accent`: color principal (hoy verde agua/teal).
 - `--color-bg` y `--color-surface`: fondos.
 - `--color-text` y `--color-text-muted`: textos.
 
-Las fuentes se cargan desde Google Fonts (Outfit y Playfair Display). Si querés otras, cambiá el `<link>` en `index.html` y las variables `--font-sans` y `--font-display` en `styles.css`.
+Las fuentes se cargan desde Google Fonts (DM Sans y Fraunces). Si querés otras, cambiá el `<link>` en `index.html` y las variables `--font-sans` y `--font-display` en `styles.css`.
 
 ## Publicar en línea
 
@@ -67,3 +67,4 @@ No hace falta instalar nada: es solo HTML, CSS y JavaScript.
 ## Enlaces
 
 - Instagram: [instagram.com/edtucuman](https://www.instagram.com/edtucuman/)
+- Facebook: [facebook.com/EDTucuman](https://www.facebook.com/EDTucuman)

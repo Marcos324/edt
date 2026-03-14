@@ -115,7 +115,7 @@ img { max-width: 100%; height: auto; display: block; }
   transition: color var(--transition);
 }
 .nav-menu a:hover { color: var(--color-accent); text-decoration: none; }
-.nav-instagram { color: var(--color-accent) !important; }
+.nav-social { color: var(--color-accent) !important; }
 
 /* ---- Hero ---- */
 .hero {
@@ -371,13 +371,13 @@ img { max-width: 100%; height: auto; display: block; }
   flex-wrap: wrap;
   gap: var(--space-md);
   justify-content: center;
-  max-width: 560px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
 .contact-card {
   flex: 1;
-  min-width: 220px;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -398,7 +398,8 @@ img { max-width: 100%; height: auto; display: block; }
   transform: translateY(-4px);
   box-shadow: var(--shadow-hover);
 }
-.contact-icon { font-size: 1.75rem; color: var(--color-accent); }
+.contact-icon { font-size: 1.75rem; color: var(--color-accent); font-weight: 700; }
+.contact-icon-fb { font-size: 1.25rem; letter-spacing: -0.02em; }
 .contact-label { font-size: 0.85rem; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.1em; }
 .contact-handle { font-weight: 600; color: var(--color-accent); }
 .contact-note { margin: 0.25rem 0 0; font-size: 0.85rem; color: var(--color-text-muted); }
@@ -407,7 +408,13 @@ img { max-width: 100%; height: auto; display: block; }
   margin: var(--space-lg) 0 0;
   color: var(--color-text-muted);
   font-size: 0.95rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
+.contact-ubicacion p { margin: 0 0 var(--space-xs); }
+.contact-ubicacion p:last-of-type { margin-top: var(--space-sm); }
+.contact-ubicacion a { font-weight: 500; }
 
 /* ---- Footer ---- */
 .footer {
@@ -424,8 +431,12 @@ img { max-width: 100%; height: auto; display: block; }
   gap: var(--space-md);
 }
 .footer-credit { color: var(--color-text-muted); font-size: 0.9rem; margin: 0; }
-.footer-instagram { color: var(--color-accent); font-weight: 600; }
-.footer-instagram:hover { text-decoration: none; }
+.footer-social {
+  display: flex;
+  gap: var(--space-md);
+}
+.footer-social a { color: var(--color-accent); font-weight: 600; }
+.footer-social a:hover { text-decoration: none; }
 
 /* ---- Responsive ---- */
 @media (max-width: 768px) {
